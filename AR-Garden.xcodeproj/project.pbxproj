@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		720733FA27DA3F6700059A72 /* tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 720733F927DA3F6700059A72 /* tree.usdz */; };
+		720846DF27DA196C007AA791 /* cupandsaucer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 720846DE27DA196C007AA791 /* cupandsaucer.usdz */; };
+		720E9A1B27CF8B30002433ED /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 720E9A1A27CF8B30002433ED /* teapot.usdz */; };
+		723B570B27C5232E00C87EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B570A27C5232E00C87EC7 /* AppDelegate.swift */; };
+		723B570D27C5232E00C87EC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B570C27C5232E00C87EC7 /* ContentView.swift */; };
+		723B571127C5233000C87EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723B571027C5233000C87EC7 /* Assets.xcassets */; };
+		723B571427C5233000C87EC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723B571327C5233000C87EC7 /* Preview Assets.xcassets */; };
+		723B571B27C523B400C87EC7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B571A27C523B400C87EC7 /* Session.swift */; };
+		723B571D27C5245C00C87EC7 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B571C27C5245C00C87EC7 /* ARViewContainer.swift */; };
+		7241914127E9E68200EE9119 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7241914027E9E68200EE9119 /* SettingsView.swift */; };
+		72786CB527DF920D003FC2CE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB427DF920D003FC2CE /* Model.swift */; };
+		72786CB727DF9379003FC2CE /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB627DF9379003FC2CE /* CatalogueView.swift */; };
+		72786CB927DF9E3D003FC2CE /* PlaceModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */; };
+		72786CBB27DFA1DF003FC2CE /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CBA27DFA1DF003FC2CE /* CustomARView.swift */; };
+		7299D23F27FB235200D4B1D7 /* DeleteModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */; };
+		72EDF64F27FF6CAF00DB249F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 72EDF64E27FF6CAF00DB249F /* FocusEntity */; };
+		72EDF65227FF6DF300DB249F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF65127FF6DF300DB249F /* CustomButton.swift */; };
+		72EDF65427FF6E0900DB249F /* RecentsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF65327FF6E0900DB249F /* RecentsButton.swift */; };
+		72F7E83C27F6E9ED00F693E5 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F7E83B27F6E9ED00F693E5 /* SceneManager.swift */; };
+		72F7E83E27F7006700F693E5 /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F7E83D27F7006700F693E5 /* ModelsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		720733F927DA3F6700059A72 /* tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree.usdz; sourceTree = "<group>"; };
+		720846DE27DA196C007AA791 /* cupandsaucer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cupandsaucer.usdz; sourceTree = "<group>"; };
+		720E9A1A27CF8B30002433ED /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		723B570727C5232E00C87EC7 /* AR-Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		723B570A27C5232E00C87EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		723B570C27C5232E00C87EC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		723B571027C5233000C87EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		723B571327C5233000C87EC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		723B571A27C523B400C87EC7 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		723B571C27C5245C00C87EC7 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		7241914027E9E68200EE9119 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		72786CB427DF920D003FC2CE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		72786CB627DF9379003FC2CE /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
+		72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModelView.swift; sourceTree = "<group>"; };
+		72786CBA27DFA1DF003FC2CE /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteModelView.swift; sourceTree = "<group>"; };
+		72EDF65127FF6DF300DB249F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		72EDF65327FF6E0900DB249F /* RecentsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsButton.swift; sourceTree = "<group>"; };
+		72F7E83B27F6E9ED00F693E5 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		72F7E83D27F7006700F693E5 /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		723B570427C5232E00C87EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EDF64F27FF6CAF00DB249F /* FocusEntity in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		723B56FE27C5232E00C87EC7 = {
+			isa = PBXGroup;
+			children = (
+				723B570927C5232E00C87EC7 /* AR-Garden */,
+				723B570827C5232E00C87EC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		723B570827C5232E00C87EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				723B570727C5232E00C87EC7 /* AR-Garden.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		723B570927C5232E00C87EC7 /* AR-Garden */ = {
+			isa = PBXGroup;
+			children = (
+				723B571027C5233000C87EC7 /* Assets.xcassets */,
+				723B572227C535C700C87EC7 /* Resources */,
+				72EDF65527FF6E5400DB249F /* AR */,
+				72EDF65627FF6EEC00DB249F /* Models */,
+				72EDF65027FF6DDF00DB249F /* Views */,
+				72EDF65727FF6EF100DB249F /* ViewModels */,
+				723B571A27C523B400C87EC7 /* Session.swift */,
+				723B570A27C5232E00C87EC7 /* AppDelegate.swift */,
+				723B570C27C5232E00C87EC7 /* ContentView.swift */,
+				723B571227C5233000C87EC7 /* Preview Content */,
+			);
+			path = "AR-Garden";
+			sourceTree = "<group>";
+		};
+		723B571227C5233000C87EC7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				723B571327C5233000C87EC7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		723B572227C535C700C87EC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				720E9A1A27CF8B30002433ED /* teapot.usdz */,
+				720846DE27DA196C007AA791 /* cupandsaucer.usdz */,
+				720733F927DA3F6700059A72 /* tree.usdz */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72EDF65027FF6DDF00DB249F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF65127FF6DF300DB249F /* CustomButton.swift */,
+				72EDF65327FF6E0900DB249F /* RecentsButton.swift */,
+				72786CB627DF9379003FC2CE /* CatalogueView.swift */,
+				7241914027E9E68200EE9119 /* SettingsView.swift */,
+				72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */,
+				7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72EDF65527FF6E5400DB249F /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				72F7E83B27F6E9ED00F693E5 /* SceneManager.swift */,
+				723B571C27C5245C00C87EC7 /* ARViewContainer.swift */,
+				72786CBA27DFA1DF003FC2CE /* CustomARView.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		72EDF65627FF6EEC00DB249F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72786CB427DF920D003FC2CE /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72EDF65727FF6EF100DB249F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				72F7E83D27F7006700F693E5 /* ModelsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		723B570627C5232E00C87EC7 /* BSP6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 723B571727C5233000C87EC7 /* Build configuration list for PBXNativeTarget "BSP6" */;
+			buildPhases = (
+				723B570327C5232E00C87EC7 /* Sources */,
+				723B570427C5232E00C87EC7 /* Frameworks */,
+				723B570527C5232E00C87EC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSP6;
+			packageProductDependencies = (
+				72EDF64E27FF6CAF00DB249F /* FocusEntity */,
+			);
+			productName = BSP6;
+			productReference = 723B570727C5232E00C87EC7 /* AR-Garden.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		723B56FF27C5232E00C87EC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					723B570627C5232E00C87EC7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 723B570227C5232E00C87EC7 /* Build configuration list for PBXProject "AR-Garden" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 723B56FE27C5232E00C87EC7;
+			packageReferences = (
+				72EDF64D27FF6CAF00DB249F /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
+			productRefGroup = 723B570827C5232E00C87EC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				723B570627C5232E00C87EC7 /* BSP6 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		723B570527C5232E00C87EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720E9A1B27CF8B30002433ED /* teapot.usdz in Resources */,
+				720846DF27DA196C007AA791 /* cupandsaucer.usdz in Resources */,
+				720733FA27DA3F6700059A72 /* tree.usdz in Resources */,
+				723B571427C5233000C87EC7 /* Preview Assets.xcassets in Resources */,
+				723B571127C5233000C87EC7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		723B570327C5232E00C87EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EDF65227FF6DF300DB249F /* CustomButton.swift in Sources */,
+				72786CB927DF9E3D003FC2CE /* PlaceModelView.swift in Sources */,
+				72EDF65427FF6E0900DB249F /* RecentsButton.swift in Sources */,
+				723B570D27C5232E00C87EC7 /* ContentView.swift in Sources */,
+				72F7E83E27F7006700F693E5 /* ModelsViewModel.swift in Sources */,
+				72F7E83C27F6E9ED00F693E5 /* SceneManager.swift in Sources */,
+				723B571B27C523B400C87EC7 /* Session.swift in Sources */,
+				7241914127E9E68200EE9119 /* SettingsView.swift in Sources */,
+				72786CBB27DFA1DF003FC2CE /* CustomARView.swift in Sources */,
+				72786CB527DF920D003FC2CE /* Model.swift in Sources */,
+				723B571D27C5245C00C87EC7 /* ARViewContainer.swift in Sources */,
+				72786CB727DF9379003FC2CE /* CatalogueView.swift in Sources */,
+				723B570B27C5232E00C87EC7 /* AppDelegate.swift in Sources */,
+				7299D23F27FB235200D4B1D7 /* DeleteModelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		723B571527C5233000C87EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		723B571627C5233000C87EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		723B571827C5233000C87EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR-Garden/Preview Content\"";
+				DEVELOPMENT_TEAM = ZRNUGARP83;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavio.AR-Garden";
+				PRODUCT_NAME = "AR-Garden";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		723B571927C5233000C87EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR-Garden/Preview Content\"";
+				DEVELOPMENT_TEAM = ZRNUGARP83;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flavio.AR-Garden";
+				PRODUCT_NAME = "AR-Garden";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		723B570227C5232E00C87EC7 /* Build configuration list for PBXProject "AR-Garden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723B571527C5233000C87EC7 /* Debug */,
+				723B571627C5233000C87EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		723B571727C5233000C87EC7 /* Build configuration list for PBXNativeTarget "BSP6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				723B571827C5233000C87EC7 /* Debug */,
+				723B571927C5233000C87EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72EDF64D27FF6CAF00DB249F /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72EDF64E27FF6CAF00DB249F /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72EDF64D27FF6CAF00DB249F /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 723B56FF27C5232E00C87EC7 /* Project object */;
+}
