@@ -9,12 +9,12 @@ import SwiftUI
 
 struct RecentsButton: View {
     
-    @EnvironmentObject var modelsViewModel: ModelsViewModel
+    @EnvironmentObject var viewModel: ARViewModel
     
     var body: some View {
-        if let recent = modelsViewModel.recentModels.last {
+        if let recent = viewModel.recentModels.last {
             Button(action: {
-                modelsViewModel.selectedModelPlacement = recent
+                viewModel.selectedModelPlacement = recent
             }, label: {
                 Image(recent.modelName)
                     .resizable()

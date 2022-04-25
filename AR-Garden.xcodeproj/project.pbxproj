@@ -14,19 +14,19 @@
 		723B570D27C5232E00C87EC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B570C27C5232E00C87EC7 /* ContentView.swift */; };
 		723B571127C5233000C87EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723B571027C5233000C87EC7 /* Assets.xcassets */; };
 		723B571427C5233000C87EC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723B571327C5233000C87EC7 /* Preview Assets.xcassets */; };
-		723B571B27C523B400C87EC7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B571A27C523B400C87EC7 /* Session.swift */; };
+		723B571B27C523B400C87EC7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B571A27C523B400C87EC7 /* Settings.swift */; };
 		723B571D27C5245C00C87EC7 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B571C27C5245C00C87EC7 /* ARViewContainer.swift */; };
 		7241914127E9E68200EE9119 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7241914027E9E68200EE9119 /* SettingsView.swift */; };
 		72786CB527DF920D003FC2CE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB427DF920D003FC2CE /* Model.swift */; };
 		72786CB727DF9379003FC2CE /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB627DF9379003FC2CE /* CatalogueView.swift */; };
 		72786CB927DF9E3D003FC2CE /* PlaceModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */; };
 		72786CBB27DFA1DF003FC2CE /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CBA27DFA1DF003FC2CE /* CustomARView.swift */; };
+		7285C75F2816B88700B4D930 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285C75E2816B88700B4D930 /* ARViewModel.swift */; };
+		7285C7612816CABD00B4D930 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285C7602816CABD00B4D930 /* MultipeerSession.swift */; };
 		7299D23F27FB235200D4B1D7 /* DeleteModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */; };
 		72EDF64F27FF6CAF00DB249F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 72EDF64E27FF6CAF00DB249F /* FocusEntity */; };
 		72EDF65227FF6DF300DB249F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF65127FF6DF300DB249F /* CustomButton.swift */; };
 		72EDF65427FF6E0900DB249F /* RecentsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF65327FF6E0900DB249F /* RecentsButton.swift */; };
-		72F7E83C27F6E9ED00F693E5 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F7E83B27F6E9ED00F693E5 /* SceneManager.swift */; };
-		72F7E83E27F7006700F693E5 /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F7E83D27F7006700F693E5 /* ModelsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,18 +38,19 @@
 		723B570C27C5232E00C87EC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		723B571027C5233000C87EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723B571327C5233000C87EC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		723B571A27C523B400C87EC7 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		723B571A27C523B400C87EC7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		723B571C27C5245C00C87EC7 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		7241914027E9E68200EE9119 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		72582C7D280F479F00F38D12 /* BSP6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BSP6-Info.plist"; sourceTree = "<group>"; };
 		72786CB427DF920D003FC2CE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		72786CB627DF9379003FC2CE /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
 		72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModelView.swift; sourceTree = "<group>"; };
 		72786CBA27DFA1DF003FC2CE /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		7285C75E2816B88700B4D930 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		7285C7602816CABD00B4D930 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 		7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteModelView.swift; sourceTree = "<group>"; };
 		72EDF65127FF6DF300DB249F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		72EDF65327FF6E0900DB249F /* RecentsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsButton.swift; sourceTree = "<group>"; };
-		72F7E83B27F6E9ED00F693E5 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
-		72F7E83D27F7006700F693E5 /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		723B56FE27C5232E00C87EC7 = {
 			isa = PBXGroup;
 			children = (
+				72582C7D280F479F00F38D12 /* BSP6-Info.plist */,
 				723B570927C5232E00C87EC7 /* AR-Garden */,
 				723B570827C5232E00C87EC7 /* Products */,
 			);
@@ -89,7 +91,7 @@
 				72EDF65627FF6EEC00DB249F /* Models */,
 				72EDF65027FF6DDF00DB249F /* Views */,
 				72EDF65727FF6EF100DB249F /* ViewModels */,
-				723B571A27C523B400C87EC7 /* Session.swift */,
+				723B571A27C523B400C87EC7 /* Settings.swift */,
 				723B570A27C5232E00C87EC7 /* AppDelegate.swift */,
 				723B570C27C5232E00C87EC7 /* ContentView.swift */,
 				723B571227C5233000C87EC7 /* Preview Content */,
@@ -131,9 +133,9 @@
 		72EDF65527FF6E5400DB249F /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				72F7E83B27F6E9ED00F693E5 /* SceneManager.swift */,
 				723B571C27C5245C00C87EC7 /* ARViewContainer.swift */,
 				72786CBA27DFA1DF003FC2CE /* CustomARView.swift */,
+				7285C7602816CABD00B4D930 /* MultipeerSession.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -149,7 +151,7 @@
 		72EDF65727FF6EF100DB249F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				72F7E83D27F7006700F693E5 /* ModelsViewModel.swift */,
+				7285C75E2816B88700B4D930 /* ARViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -233,17 +235,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7285C75F2816B88700B4D930 /* ARViewModel.swift in Sources */,
 				72EDF65227FF6DF300DB249F /* CustomButton.swift in Sources */,
 				72786CB927DF9E3D003FC2CE /* PlaceModelView.swift in Sources */,
 				72EDF65427FF6E0900DB249F /* RecentsButton.swift in Sources */,
 				723B570D27C5232E00C87EC7 /* ContentView.swift in Sources */,
-				72F7E83E27F7006700F693E5 /* ModelsViewModel.swift in Sources */,
-				72F7E83C27F6E9ED00F693E5 /* SceneManager.swift in Sources */,
-				723B571B27C523B400C87EC7 /* Session.swift in Sources */,
+				723B571B27C523B400C87EC7 /* Settings.swift in Sources */,
 				7241914127E9E68200EE9119 /* SettingsView.swift in Sources */,
 				72786CBB27DFA1DF003FC2CE /* CustomARView.swift in Sources */,
 				72786CB527DF920D003FC2CE /* Model.swift in Sources */,
 				723B571D27C5245C00C87EC7 /* ARViewContainer.swift in Sources */,
+				7285C7612816CABD00B4D930 /* MultipeerSession.swift in Sources */,
 				72786CB727DF9379003FC2CE /* CatalogueView.swift in Sources */,
 				723B570B27C5232E00C87EC7 /* AppDelegate.swift in Sources */,
 				7299D23F27FB235200D4B1D7 /* DeleteModelView.swift in Sources */,
@@ -380,7 +382,10 @@
 				DEVELOPMENT_TEAM = ZRNUGARP83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = "BSP6-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented reality";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = Multipeer;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Multipeer experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -413,7 +418,10 @@
 				DEVELOPMENT_TEAM = ZRNUGARP83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = "BSP6-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented reality";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = Multipeer;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Multipeer experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;

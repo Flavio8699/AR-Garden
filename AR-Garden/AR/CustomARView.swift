@@ -10,11 +10,11 @@ import FocusEntity
 import ARKit
 import RealityKit
 import Combine
+import MultipeerSession
 
 class CustomARView: ARView {
     
-    var modelsViewModel: ModelsViewModel
-    var currentSession: Session
+    var settings: Settings
     var focusEntity: FocusEntity?
     
     var configuration: ARWorldTrackingConfiguration {
@@ -25,35 +25,49 @@ class CustomARView: ARView {
             config.sceneReconstruction = .mesh
         }
         
+        config.isCollaborationEnabled = true
+
         return config
     }
     
     private var cancellablePeopleOcclusion: AnyCancellable?
     private var cancellableObjectOcclusion: AnyCancellable?
     private var cancellableLidar: AnyCancellable?
+    private var cancellableMultiuser: AnyCancellable?
     
-    required init(frame frameRect: CGRect, session currentSession: Session, modelsViewModel: ModelsViewModel) {
-        self.currentSession = currentSession
-        self.modelsViewModel = modelsViewModel
+    required init(frame frameRect: CGRect, settings: Settings) {
+        self.settings = settings
         super.init(frame: frameRect)
         
         self.focusEntity = FocusEntity(on: self, focus: .classic)
-
+        
+        self.automaticallyConfigureSession = false
         session.run(configuration)
         
-        self.cancellablePeopleOcclusion = currentSession.$peopleOcclusion.sink { [weak self] _ in
+        // Setup a coaching overlay
+        let coachingOverlay = ARCoachingOverlayView()
+
+        coachingOverlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        coachingOverlay.session = session
+        coachingOverlay.goal = .horizontalPlane
+        
+        self.addSubview(coachingOverlay)
+        
+        self.cancellablePeopleOcclusion = settings.$peopleOcclusion.sink { [weak self] _ in
             self?.togglePeopleOcclusion()
         }
-        
-        self.cancellableObjectOcclusion = currentSession.$objectOcclusion.sink { [weak self] _ in
+
+        self.cancellableObjectOcclusion = settings.$objectOcclusion.sink { [weak self] _ in
             self?.toggleObjectOcclusion()
         }
-        
-        self.cancellableLidar = currentSession.$lidar.sink { [weak self] _ in
+
+        self.cancellableLidar = settings.$lidar.sink { [weak self] _ in
             self?.toggleLidar()
         }
         
-        self.enableDeletion()
+        self.cancellableMultiuser = settings.$multiuser.sink { [weak self] _ in
+            self?.toggleMultiuser()
+        }
     }
     
     func togglePeopleOcclusion() {
@@ -85,26 +99,17 @@ class CustomARView: ARView {
         }
     }
     
-    required init(frame frameRect: CGRect) {
-        fatalError("init(frame:) has not been implemented")
+    func toggleMultiuser() {
+        guard let config = self.session.configuration as? ARWorldTrackingConfiguration else { return }
+        config.isCollaborationEnabled.toggle()
+        self.session.run(config)
     }
     
     @objc required dynamic init?(coder decoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-}
-
-extension CustomARView {
-    func enableDeletion() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(recognizer:)))
-        self.addGestureRecognizer(tapGesture)
-    }
-     
-    @objc func handleTapGesture(recognizer: UITapGestureRecognizer) {
-        let location = recognizer.location(in: self)
-        
-        if let entity = self.entity(at: location) as? ModelEntity {
-            self.modelsViewModel.selectedModelDeletion = entity
-        }
+    
+    @MainActor override required dynamic init(frame frameRect: CGRect) {
+        fatalError("init(frame:) has not been implemented")
     }
 }

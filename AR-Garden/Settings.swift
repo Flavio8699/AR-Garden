@@ -1,5 +1,5 @@
 //
-//  Session.swift
+//  Settings.swift
 //  AR-Garden
 //
 //  Created by Flavio Matias on 22/02/2022.
@@ -8,12 +8,11 @@
 import SwiftUI
 import Combine
 
-class Session: ObservableObject {
+class Settings: ObservableObject {
         
     // Settings
     @Published var peopleOcclusion: Bool = false
     @Published var objectOcclusion: Bool = true
     @Published var lidar: Bool = true
-
-    var sceneObserver: Cancellable?
+    @Published var multiuser: Bool = true
 }

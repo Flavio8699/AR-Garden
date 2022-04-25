@@ -47,8 +47,3 @@ class Model: Identifiable {
             })
     }
 }
-
-struct ModelAnchor {
-    var model: Model
-    var anchor: ARAnchor?
-}

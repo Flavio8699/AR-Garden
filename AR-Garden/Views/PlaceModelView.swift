@@ -9,13 +9,13 @@ import SwiftUI
 
 struct PlaceModelView: View {
     
-    @EnvironmentObject var modelsViewModel: ModelsViewModel
+    @EnvironmentObject var viewModel: ARViewModel
     
     var body: some View {
         HStack {
             Spacer()
             Button(action: {
-                modelsViewModel.selectedModelPlacement = nil
+                viewModel.selectedModelPlacement = nil
             }, label: {
                 Image(systemName: "xmark.circle.fill").font(.system(size: 40, weight: .light, design: .default))
                     .foregroundColor(.white)
@@ -23,9 +23,10 @@ struct PlaceModelView: View {
             })
             Spacer()
             Button(action: {
-                if let model = modelsViewModel.selectedModelPlacement {
-                    modelsViewModel.placeModels.append(ModelAnchor(model: model, anchor: nil))
-                    modelsViewModel.selectedModelPlacement = nil
+                if let model = viewModel.selectedModelPlacement {
+                    viewModel.placeModels.append(model)
+                    viewModel.selectedModelPlacement = nil
+                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
                 }
             }, label: {
                 Image(systemName: "checkmark.circle.fill").font(.system(size: 40, weight: .light, design: .default))

@@ -9,8 +9,7 @@ import SwiftUI
 
 struct CatalogueView: View {
     
-    @EnvironmentObject var session: Session
-    @EnvironmentObject var modelsViewModel: ModelsViewModel
+    @EnvironmentObject var viewModel: ARViewModel
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -19,16 +18,12 @@ struct CatalogueView: View {
                 Text("Recents").font(.title2).bold()
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
-                        let recents = modelsViewModel.getUniqueRecents()
+                        let recents = viewModel.getUniqueRecents()
                         ForEach(0..<recents.count, id: \.self) { index in
                             let model = recents[index]
                             
                             Button(action: {
-                                model.loadModel(handler: { completed, error in
-                                    if completed {
-                                        modelsViewModel.selectedModelPlacement = model
-                                    }
-                                })
+                                viewModel.selectedModelPlacement = model
                                 NotificationCenter.default.post(name: NSNotification.Name("Tab"), object: nil, userInfo: ["tab": nil])
                             }, label: {
                                 Image(model.modelName).resizable().frame(width: 150, height: 150).cornerRadius(8)
@@ -40,15 +35,11 @@ struct CatalogueView: View {
                 Text("Items").font(.title2).bold()
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
-                        ForEach(0..<modelsViewModel.models.count, id: \.self) { index in
-                            let model = modelsViewModel.models[index]
+                        ForEach(0..<viewModel.models.count, id: \.self) { index in
+                            let model = viewModel.models[index]
                             
                             Button(action: {
-                                model.loadModel(handler: { completed, error in
-                                    if completed {
-                                        modelsViewModel.selectedModelPlacement = model
-                                    }
-                                })
+                                viewModel.selectedModelPlacement = model
                                 NotificationCenter.default.post(name: NSNotification.Name("Tab"), object: nil, userInfo: ["tab": nil])
                             }, label: {
                                 Image(model.modelName).resizable().frame(width: 150, height: 150).cornerRadius(8)
