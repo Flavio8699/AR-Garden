@@ -1,6 +1,6 @@
 //
 //  ARViewModel.swift
-//  BSP6
+//  AR-Garden
 //
 //  Created by Flavio Matias on 25/04/2022.
 //
@@ -11,8 +11,17 @@ import RealityKit
 import ARKit
 import MultipeerConnectivity
 import Combine
+import MultipeerSession
 
 private let anchorPrefix = "model-"
+
+enum ObjectCategory: String, CaseIterable {
+    case plants_and_flowers = "Plants and flowers"
+    case tools = "Tools"
+    case furniture = "Furniture"
+    case decoration = "Decoration"
+    case random = "Random"
+}
 
 class ARViewModel: ObservableObject {
     
@@ -83,23 +92,50 @@ class ARViewModel: ObservableObject {
             self.sendARID(to: multipeerSession.connectedPeers)
         }
         
-        multipeerSession = MultipeerSession(receivedDataHandler: self.receiveData, peerJoinedHandler: self.peerJoined, peerLeftHandler: self.peerLeft, peerDiscoveredHandler: self.peerDiscovered)
+        multipeerSession = MultipeerSession(serviceName: "ar-garden", receivedDataHandler: self.receiveData, peerJoinedHandler: self.peerJoined, peerLeftHandler: self.peerLeft, peerDiscoveredHandler: self.peerDiscovered)
     }
     
     func loadModels() {
-        let teapot = Model(modelName: "teapot", name: "Teapot", scale: 0.1)
-        let cupandsaucer = Model(modelName: "cupandsaucer", name: "Cup and saucer", scale: 0.01)
-        let tree = Model(modelName: "tree", name: "Tree", scale: 0.1)
-        
-        self.models += [teapot, cupandsaucer, tree]
-        
-        for model in models {
-            model.loadModel(handler: { completed, error in
-                if completed {
-                    print("LOADED \(model.modelName)")
-                }
-            })
-        }
+        self.models = [
+            Model(modelName: "wooden-fence", name: "Wooden fence", category: .random, scale: 0.005), // OK
+            Model(modelName: "bucket", name: "Bucket", category: .tools, scale: 0.01), // OK
+            Model(modelName: "basketball", name: "Basketball", category: .random), // OK
+            Model(modelName: "table-bergamo", name: "Table bergamo", category: .furniture, scale: 0.8), // OK
+            Model(modelName: "chair-beech", name: "Chair beech", category: .furniture), // OK
+            Model(modelName: "chair-black", name: "Chair black", category: .furniture), // OK
+            Model(modelName: "chair-oak", name: "Chair oak", category: .furniture), // OK
+            Model(modelName: "bench", name: "Bench", category: .furniture, scale: 0.005), // OK
+            Model(modelName: "teapot", name: "Teapot", category: .random, scale: 0.1), // OK
+            Model(modelName: "cupandsaucer", name: "Cup and saucer", category: .random, scale: 0.01), // OK
+            Model(modelName: "simple-tree", name: "Simple tree", category: .plants_and_flowers, scale: 0.25), // OK
+            Model(modelName: "slide", name: "Slide", category: .decoration, scale: 0.5), // OK
+            Model(modelName: "furniture_set_all", name: "Set 1: Complete", category: .furniture, scale: 0.2), // OK
+            Model(modelName: "furniture_set_chair_1", name: "Set 1: Chair 1", category: .furniture, scale: 0.002), // OK
+            Model(modelName: "furniture_set_chair_2", name: "Set 1: Chair 2", category: .furniture, scale: 0.002), // OK
+            Model(modelName: "furniture_set_beanbag", name: "Set 1: Beanbag", category: .furniture, scale: 0.002), // OK
+            Model(modelName: "furniture_set_table", name: "Set 1: Table", category: .furniture, scale: 0.002), // OK
+            Model(modelName: "furniture_set_2_all", name: "Set 2: Complete", category: .furniture, scale: 0.0075), // OK
+            Model(modelName: "furniture_set_2_chair", name: "Set 2: Chair", category: .furniture, scale: 0.0075), // OK
+            Model(modelName: "furniture_set_2_table", name: "Set 2: Table", category: .furniture, scale: 0.0075), // OK
+            Model(modelName: "apple-tree", name: "Apple tree", category: .plants_and_flowers, scale: 0.065), // OK
+            Model(modelName: "fern", name: "Fern", category: .plants_and_flowers, scale: 0.1), // OK
+            Model(modelName: "flower-1", name: "Flower 1", category: .plants_and_flowers, scale: 0.1), // OK
+            Model(modelName: "flower-2", name: "Flower 2", category: .plants_and_flowers, scale: 0.1), // OK
+            Model(modelName: "flower-3", name: "Flower 3", category: .plants_and_flowers, scale: 0.1), // OK
+            Model(modelName: "flower-pot", name: "Flower pot", category: .decoration, scale: 0.005), // OK
+            Model(modelName: "lamp", name: "Lamp", category: .decoration, scale: 0.01), // OK
+            Model(modelName: "pumpkin", name: "Pumpkin", category: .decoration, scale: 0.001), // OK
+            Model(modelName: "raised-bed", name: "Raised bed", category: .plants_and_flowers, scale: 0.005), // OK
+            Model(modelName: "rose-in-a-pot", name: "Rose in a pot", category: .plants_and_flowers, scale: 0.1), // OK
+            Model(modelName: "shovel", name: "Shovel", category: .tools, scale: 0.005), // OK
+            Model(modelName: "swimming-pool", name: "Swimming pool", category: .decoration, scale: 0.5), // OK
+            Model(modelName: "tomato-plant", name: "Tomato plant", category: .plants_and_flowers, scale: 0.25), // OK
+            Model(modelName: "tree-big", name: "Tree big", category: .plants_and_flowers, scale: 0.01), // OK
+            Model(modelName: "tree-small", name: "Tree small", category: .plants_and_flowers, scale: 0.008), // OK
+            Model(modelName: "wheelbarrow", name: "Wheelbarrow", category: .tools, scale: 0.01), // OK
+            Model(modelName: "box", name: "Wooden box", category: .tools, scale: 0.005), // OK
+            Model(modelName: "turtle", name: "Turtle", category: .decoration, scale: 0.5), // OK
+        ]
     }
     
     private func updateScene() {
@@ -162,7 +198,6 @@ class ARViewModel: ObservableObject {
         }
         anchor.removeFromParent()
         selectedModelDeletion = nil
-        persistenceAction = .save
     }
     
     func getUniqueRecents() -> [Model] {
@@ -175,6 +210,16 @@ class ARViewModel: ObservableObject {
         }
         
         return result
+    }
+    
+    func getModels(for category: ObjectCategory) -> [Model] {
+        return self.models.filter { $0.category == category }
+    }
+    
+    func resetModels() {
+        for model in self.models {
+            model.entity = nil
+        }
     }
 }
 
@@ -273,7 +318,6 @@ extension ARViewModel {
            }
 
            peerSessionIDs[peer] = newSessionID
-           print(peerSessionIDs)
         }
     }
     

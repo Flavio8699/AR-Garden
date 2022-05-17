@@ -39,12 +39,19 @@ extension ARViewContainer {
             self.parent = parent
         }
         
+        // Place model from loaded scene or multiuser experience
         func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             for anchor in anchors {
                 if let name = anchor.name, name.hasPrefix(anchorPrefix) {
                     let modelName = String(name.dropFirst(anchorPrefix.count))
                     
-                    self.parent.viewModel.place(modelName, for: anchor)
+                    if let model = self.parent.viewModel.models.first(where: { $0.modelName == modelName }) {
+                        model.loadModel(handler: { completed, error in
+                            if completed {
+                                self.parent.viewModel.place(modelName, for: anchor)
+                            }
+                        })
+                    }
                 }
             }
         }

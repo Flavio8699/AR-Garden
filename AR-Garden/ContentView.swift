@@ -80,8 +80,8 @@ struct ContentView: View {
                             for anchor in viewModel.anchorEntities {
                                 anchor.removeFromParent()
                             }
-                            viewModel.persistenceAction = .save
                             UINotificationFeedbackGenerator().notificationOccurred(.success)
+                            viewModel.resetModels()
                         }
                         Button("Cancel", role: .cancel) { }
                     }

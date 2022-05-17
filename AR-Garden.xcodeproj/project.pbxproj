@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		720733FA27DA3F6700059A72 /* tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 720733F927DA3F6700059A72 /* tree.usdz */; };
+		720733FA27DA3F6700059A72 /* simple-tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 720733F927DA3F6700059A72 /* simple-tree.usdz */; };
 		720846DF27DA196C007AA791 /* cupandsaucer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 720846DE27DA196C007AA791 /* cupandsaucer.usdz */; };
 		720E9A1B27CF8B30002433ED /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 720E9A1A27CF8B30002433ED /* teapot.usdz */; };
+		7218024F28338FC60092667B /* furniture_set_2_chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7218024C28338FC30092667B /* furniture_set_2_chair.usdz */; };
+		7218025028338FC60092667B /* furniture_set_2_table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7218024D28338FC40092667B /* furniture_set_2_table.usdz */; };
+		7218025128338FC60092667B /* furniture_set_2_all.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7218024E28338FC60092667B /* furniture_set_2_all.usdz */; };
+		72180254283394900092667B /* tree-big.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 721802522833948E0092667B /* tree-big.usdz */; };
+		72180255283394900092667B /* tree-small.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 721802532833948F0092667B /* tree-small.usdz */; };
+		7218025728339E2B0092667B /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218025628339E2B0092667B /* CategoryView.swift */; };
+		7218025A2833ACBE0092667B /* MultipeerSession in Frameworks */ = {isa = PBXBuildFile; productRef = 721802592833ACBE0092667B /* MultipeerSession */; };
 		723B570B27C5232E00C87EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B570A27C5232E00C87EC7 /* AppDelegate.swift */; };
 		723B570D27C5232E00C87EC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B570C27C5232E00C87EC7 /* ContentView.swift */; };
 		723B571127C5233000C87EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723B571027C5233000C87EC7 /* Assets.xcassets */; };
@@ -17,23 +24,59 @@
 		723B571B27C523B400C87EC7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B571A27C523B400C87EC7 /* Settings.swift */; };
 		723B571D27C5245C00C87EC7 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B571C27C5245C00C87EC7 /* ARViewContainer.swift */; };
 		7241914127E9E68200EE9119 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7241914027E9E68200EE9119 /* SettingsView.swift */; };
+		7242C09028325ECD0091CABC /* pumpkin.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7242C08F28325ECC0091CABC /* pumpkin.usdz */; };
+		7263E6302823D97C00471DE1 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7263E62F2823D97C00471DE1 /* ItemView.swift */; };
+		72665E2528324ECC00E75C8A /* furniture_set_beanbag.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E0F28324EBC00E75C8A /* furniture_set_beanbag.usdz */; };
+		72665E2628324ECC00E75C8A /* lamp.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1028324EBD00E75C8A /* lamp.usdz */; };
+		72665E2728324ECC00E75C8A /* flower-1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1128324EBD00E75C8A /* flower-1.usdz */; };
+		72665E2928324ECC00E75C8A /* flower-pot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1428324EBE00E75C8A /* flower-pot.usdz */; };
+		72665E2A28324ECC00E75C8A /* furniture_set_chair_2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1528324EC000E75C8A /* furniture_set_chair_2.usdz */; };
+		72665E2B28324ECC00E75C8A /* furniture_set_all.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1628324EC100E75C8A /* furniture_set_all.usdz */; };
+		72665E2C28324ECC00E75C8A /* furniture_set_table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1728324EC100E75C8A /* furniture_set_table.usdz */; };
+		72665E2D28324ECC00E75C8A /* fern.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1828324EC200E75C8A /* fern.usdz */; };
+		72665E2F28324ECC00E75C8A /* rose-in-a-pot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1A28324EC800E75C8A /* rose-in-a-pot.usdz */; };
+		72665E3028324ECC00E75C8A /* swimming-pool.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1B28324EC800E75C8A /* swimming-pool.usdz */; };
+		72665E3128324ECC00E75C8A /* shovel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1C28324EC900E75C8A /* shovel.usdz */; };
+		72665E3328324ECC00E75C8A /* furniture_set_chair_1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E1E28324ECA00E75C8A /* furniture_set_chair_1.usdz */; };
+		72665E3528324ECC00E75C8A /* tomato-plant.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E2028324ECB00E75C8A /* tomato-plant.usdz */; };
+		72665E3628324ECC00E75C8A /* apple-tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E2128324ECB00E75C8A /* apple-tree.usdz */; };
+		72665E3728324ECC00E75C8A /* flower-3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E2228324ECC00E75C8A /* flower-3.usdz */; };
+		72665E3928324ECC00E75C8A /* flower-2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E2428324ECC00E75C8A /* flower-2.usdz */; };
+		72665E3C28325D5500E75C8A /* wheelbarrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E3A28325D5500E75C8A /* wheelbarrow.usdz */; };
+		72665E3D28325D5500E75C8A /* raised-bed.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72665E3B28325D5500E75C8A /* raised-bed.usdz */; };
 		72786CB527DF920D003FC2CE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB427DF920D003FC2CE /* Model.swift */; };
 		72786CB727DF9379003FC2CE /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB627DF9379003FC2CE /* CatalogueView.swift */; };
 		72786CB927DF9E3D003FC2CE /* PlaceModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */; };
 		72786CBB27DFA1DF003FC2CE /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72786CBA27DFA1DF003FC2CE /* CustomARView.swift */; };
+		7282B4592833DD8D003C45C1 /* box.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7282B4572833DD8A003C45C1 /* box.usdz */; };
+		7282B45A2833DD8D003C45C1 /* turtle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7282B4582833DD8D003C45C1 /* turtle.usdz */; };
 		7285C75F2816B88700B4D930 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285C75E2816B88700B4D930 /* ARViewModel.swift */; };
-		7285C7612816CABD00B4D930 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285C7602816CABD00B4D930 /* MultipeerSession.swift */; };
 		7299D23F27FB235200D4B1D7 /* DeleteModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */; };
+		72C2A90B2822B388005F6CCD /* bench.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A90A2822B388005F6CCD /* bench.usdz */; };
+		72C2A90F2822B39F005F6CCD /* chair-oak.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A90C2822B39E005F6CCD /* chair-oak.usdz */; };
+		72C2A9102822B39F005F6CCD /* chair-black.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A90D2822B39E005F6CCD /* chair-black.usdz */; };
+		72C2A9112822B39F005F6CCD /* chair-beech.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A90E2822B39F005F6CCD /* chair-beech.usdz */; };
+		72C2A9132822B3BA005F6CCD /* bucket.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A9122822B3BA005F6CCD /* bucket.usdz */; };
+		72C2A9152822B3D4005F6CCD /* table-bergamo.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A9142822B3D4005F6CCD /* table-bergamo.usdz */; };
+		72C2A9172822B425005F6CCD /* wooden-fence.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A9162822B425005F6CCD /* wooden-fence.usdz */; };
+		72C2A9192822B460005F6CCD /* basketball.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A9182822B460005F6CCD /* basketball.usdz */; };
+		72D778EC282269CA00C3413E /* slide.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72D778EB282269CA00C3413E /* slide.usdz */; };
 		72EDF64F27FF6CAF00DB249F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 72EDF64E27FF6CAF00DB249F /* FocusEntity */; };
 		72EDF65227FF6DF300DB249F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF65127FF6DF300DB249F /* CustomButton.swift */; };
 		72EDF65427FF6E0900DB249F /* RecentsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDF65327FF6E0900DB249F /* RecentsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		720733F927DA3F6700059A72 /* tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tree.usdz; sourceTree = "<group>"; };
+		720733F927DA3F6700059A72 /* simple-tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "simple-tree.usdz"; sourceTree = "<group>"; };
 		720846DE27DA196C007AA791 /* cupandsaucer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cupandsaucer.usdz; sourceTree = "<group>"; };
 		720E9A1A27CF8B30002433ED /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
-		723B570727C5232E00C87EC7 /* AR-Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7218024C28338FC30092667B /* furniture_set_2_chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_2_chair.usdz; sourceTree = "<group>"; };
+		7218024D28338FC40092667B /* furniture_set_2_table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_2_table.usdz; sourceTree = "<group>"; };
+		7218024E28338FC60092667B /* furniture_set_2_all.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_2_all.usdz; sourceTree = "<group>"; };
+		721802522833948E0092667B /* tree-big.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "tree-big.usdz"; sourceTree = "<group>"; };
+		721802532833948F0092667B /* tree-small.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "tree-small.usdz"; sourceTree = "<group>"; };
+		7218025628339E2B0092667B /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		723B570727C5232E00C87EC7 /* AR Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723B570A27C5232E00C87EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		723B570C27C5232E00C87EC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		723B571027C5233000C87EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,14 +84,44 @@
 		723B571A27C523B400C87EC7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		723B571C27C5245C00C87EC7 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		7241914027E9E68200EE9119 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		72582C7D280F479F00F38D12 /* BSP6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BSP6-Info.plist"; sourceTree = "<group>"; };
+		7242C08F28325ECC0091CABC /* pumpkin.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pumpkin.usdz; sourceTree = "<group>"; };
+		72582C7D280F479F00F38D12 /* AR-Garden-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AR-Garden-Info.plist"; sourceTree = "<group>"; };
+		7263E62F2823D97C00471DE1 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		72665E0F28324EBC00E75C8A /* furniture_set_beanbag.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_beanbag.usdz; sourceTree = "<group>"; };
+		72665E1028324EBD00E75C8A /* lamp.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = lamp.usdz; sourceTree = "<group>"; };
+		72665E1128324EBD00E75C8A /* flower-1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "flower-1.usdz"; sourceTree = "<group>"; };
+		72665E1428324EBE00E75C8A /* flower-pot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "flower-pot.usdz"; sourceTree = "<group>"; };
+		72665E1528324EC000E75C8A /* furniture_set_chair_2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_chair_2.usdz; sourceTree = "<group>"; };
+		72665E1628324EC100E75C8A /* furniture_set_all.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_all.usdz; sourceTree = "<group>"; };
+		72665E1728324EC100E75C8A /* furniture_set_table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_table.usdz; sourceTree = "<group>"; };
+		72665E1828324EC200E75C8A /* fern.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fern.usdz; sourceTree = "<group>"; };
+		72665E1A28324EC800E75C8A /* rose-in-a-pot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "rose-in-a-pot.usdz"; sourceTree = "<group>"; };
+		72665E1B28324EC800E75C8A /* swimming-pool.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "swimming-pool.usdz"; sourceTree = "<group>"; };
+		72665E1C28324EC900E75C8A /* shovel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = shovel.usdz; sourceTree = "<group>"; };
+		72665E1E28324ECA00E75C8A /* furniture_set_chair_1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = furniture_set_chair_1.usdz; sourceTree = "<group>"; };
+		72665E2028324ECB00E75C8A /* tomato-plant.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "tomato-plant.usdz"; sourceTree = "<group>"; };
+		72665E2128324ECB00E75C8A /* apple-tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "apple-tree.usdz"; sourceTree = "<group>"; };
+		72665E2228324ECC00E75C8A /* flower-3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "flower-3.usdz"; sourceTree = "<group>"; };
+		72665E2428324ECC00E75C8A /* flower-2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "flower-2.usdz"; sourceTree = "<group>"; };
+		72665E3A28325D5500E75C8A /* wheelbarrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wheelbarrow.usdz; sourceTree = "<group>"; };
+		72665E3B28325D5500E75C8A /* raised-bed.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "raised-bed.usdz"; sourceTree = "<group>"; };
 		72786CB427DF920D003FC2CE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		72786CB627DF9379003FC2CE /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
 		72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModelView.swift; sourceTree = "<group>"; };
 		72786CBA27DFA1DF003FC2CE /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		7282B4572833DD8A003C45C1 /* box.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = box.usdz; sourceTree = "<group>"; };
+		7282B4582833DD8D003C45C1 /* turtle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = turtle.usdz; sourceTree = "<group>"; };
 		7285C75E2816B88700B4D930 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
-		7285C7602816CABD00B4D930 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 		7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteModelView.swift; sourceTree = "<group>"; };
+		72C2A90A2822B388005F6CCD /* bench.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bench.usdz; sourceTree = "<group>"; };
+		72C2A90C2822B39E005F6CCD /* chair-oak.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "chair-oak.usdz"; sourceTree = "<group>"; };
+		72C2A90D2822B39E005F6CCD /* chair-black.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "chair-black.usdz"; sourceTree = "<group>"; };
+		72C2A90E2822B39F005F6CCD /* chair-beech.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "chair-beech.usdz"; sourceTree = "<group>"; };
+		72C2A9122822B3BA005F6CCD /* bucket.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bucket.usdz; sourceTree = "<group>"; };
+		72C2A9142822B3D4005F6CCD /* table-bergamo.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "table-bergamo.usdz"; sourceTree = "<group>"; };
+		72C2A9162822B425005F6CCD /* wooden-fence.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "wooden-fence.usdz"; sourceTree = "<group>"; };
+		72C2A9182822B460005F6CCD /* basketball.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = basketball.usdz; sourceTree = "<group>"; };
+		72D778EB282269CA00C3413E /* slide.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = slide.usdz; sourceTree = "<group>"; };
 		72EDF65127FF6DF300DB249F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		72EDF65327FF6E0900DB249F /* RecentsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EDF64F27FF6CAF00DB249F /* FocusEntity in Frameworks */,
+				7218025A2833ACBE0092667B /* MultipeerSession in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +142,7 @@
 		723B56FE27C5232E00C87EC7 = {
 			isa = PBXGroup;
 			children = (
-				72582C7D280F479F00F38D12 /* BSP6-Info.plist */,
+				72582C7D280F479F00F38D12 /* AR-Garden-Info.plist */,
 				723B570927C5232E00C87EC7 /* AR-Garden */,
 				723B570827C5232E00C87EC7 /* Products */,
 			);
@@ -77,7 +151,7 @@
 		723B570827C5232E00C87EC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				723B570727C5232E00C87EC7 /* AR-Garden.app */,
+				723B570727C5232E00C87EC7 /* AR Garden.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,20 +184,81 @@
 		723B572227C535C700C87EC7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7282B4572833DD8A003C45C1 /* box.usdz */,
+				7282B4582833DD8D003C45C1 /* turtle.usdz */,
+				72665E2128324ECB00E75C8A /* apple-tree.usdz */,
+				72665E1828324EC200E75C8A /* fern.usdz */,
+				72665E1128324EBD00E75C8A /* flower-1.usdz */,
+				72665E2428324ECC00E75C8A /* flower-2.usdz */,
+				72665E2228324ECC00E75C8A /* flower-3.usdz */,
+				72665E1428324EBE00E75C8A /* flower-pot.usdz */,
+				72665E1628324EC100E75C8A /* furniture_set_all.usdz */,
+				72665E0F28324EBC00E75C8A /* furniture_set_beanbag.usdz */,
+				72665E1E28324ECA00E75C8A /* furniture_set_chair_1.usdz */,
+				72665E1528324EC000E75C8A /* furniture_set_chair_2.usdz */,
+				72665E1728324EC100E75C8A /* furniture_set_table.usdz */,
+				7218024E28338FC60092667B /* furniture_set_2_all.usdz */,
+				7218024C28338FC30092667B /* furniture_set_2_chair.usdz */,
+				7218024D28338FC40092667B /* furniture_set_2_table.usdz */,
+				7242C08F28325ECC0091CABC /* pumpkin.usdz */,
+				72665E1028324EBD00E75C8A /* lamp.usdz */,
+				72665E3B28325D5500E75C8A /* raised-bed.usdz */,
+				72665E3A28325D5500E75C8A /* wheelbarrow.usdz */,
+				72665E1A28324EC800E75C8A /* rose-in-a-pot.usdz */,
+				72665E1C28324EC900E75C8A /* shovel.usdz */,
+				72665E1B28324EC800E75C8A /* swimming-pool.usdz */,
+				72665E2028324ECB00E75C8A /* tomato-plant.usdz */,
+				72C2A9162822B425005F6CCD /* wooden-fence.usdz */,
+				72C2A9122822B3BA005F6CCD /* bucket.usdz */,
+				72C2A9182822B460005F6CCD /* basketball.usdz */,
+				72C2A9142822B3D4005F6CCD /* table-bergamo.usdz */,
+				72C2A90E2822B39F005F6CCD /* chair-beech.usdz */,
+				72C2A90D2822B39E005F6CCD /* chair-black.usdz */,
+				72C2A90C2822B39E005F6CCD /* chair-oak.usdz */,
+				72C2A90A2822B388005F6CCD /* bench.usdz */,
 				720E9A1A27CF8B30002433ED /* teapot.usdz */,
 				720846DE27DA196C007AA791 /* cupandsaucer.usdz */,
-				720733F927DA3F6700059A72 /* tree.usdz */,
+				720733F927DA3F6700059A72 /* simple-tree.usdz */,
+				72D778EB282269CA00C3413E /* slide.usdz */,
+				721802522833948E0092667B /* tree-big.usdz */,
+				721802532833948F0092667B /* tree-small.usdz */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7282B4542833DBF2003C45C1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				72EDF65127FF6DF300DB249F /* CustomButton.swift */,
+				72EDF65327FF6E0900DB249F /* RecentsButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		7282B4552833DC03003C45C1 /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				72786CB627DF9379003FC2CE /* CatalogueView.swift */,
+				7263E62F2823D97C00471DE1 /* ItemView.swift */,
+				7218025628339E2B0092667B /* CategoryView.swift */,
+			);
+			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		7282B4562833DC11003C45C1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7241914027E9E68200EE9119 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		72EDF65027FF6DDF00DB249F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				72EDF65127FF6DF300DB249F /* CustomButton.swift */,
-				72EDF65327FF6E0900DB249F /* RecentsButton.swift */,
-				72786CB627DF9379003FC2CE /* CatalogueView.swift */,
-				7241914027E9E68200EE9119 /* SettingsView.swift */,
+				7282B4542833DBF2003C45C1 /* Buttons */,
+				7282B4552833DC03003C45C1 /* Catalogue */,
+				7282B4562833DC11003C45C1 /* Settings */,
 				72786CB827DF9E3D003FC2CE /* PlaceModelView.swift */,
 				7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */,
 			);
@@ -135,7 +270,6 @@
 			children = (
 				723B571C27C5245C00C87EC7 /* ARViewContainer.swift */,
 				72786CBA27DFA1DF003FC2CE /* CustomARView.swift */,
-				7285C7602816CABD00B4D930 /* MultipeerSession.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -159,9 +293,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		723B570627C5232E00C87EC7 /* BSP6 */ = {
+		723B570627C5232E00C87EC7 /* AR-Garden */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 723B571727C5233000C87EC7 /* Build configuration list for PBXNativeTarget "BSP6" */;
+			buildConfigurationList = 723B571727C5233000C87EC7 /* Build configuration list for PBXNativeTarget "AR-Garden" */;
 			buildPhases = (
 				723B570327C5232E00C87EC7 /* Sources */,
 				723B570427C5232E00C87EC7 /* Frameworks */,
@@ -171,12 +305,13 @@
 			);
 			dependencies = (
 			);
-			name = BSP6;
+			name = "AR-Garden";
 			packageProductDependencies = (
 				72EDF64E27FF6CAF00DB249F /* FocusEntity */,
+				721802592833ACBE0092667B /* MultipeerSession */,
 			);
 			productName = BSP6;
-			productReference = 723B570727C5232E00C87EC7 /* AR-Garden.app */;
+			productReference = 723B570727C5232E00C87EC7 /* AR Garden.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,12 +340,13 @@
 			mainGroup = 723B56FE27C5232E00C87EC7;
 			packageReferences = (
 				72EDF64D27FF6CAF00DB249F /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				721802582833ACBE0092667B /* XCRemoteSwiftPackageReference "multipeer-session" */,
 			);
 			productRefGroup = 723B570827C5232E00C87EC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				723B570627C5232E00C87EC7 /* BSP6 */,
+				723B570627C5232E00C87EC7 /* AR-Garden */,
 			);
 		};
 /* End PBXProject section */
@@ -220,11 +356,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C2A90B2822B388005F6CCD /* bench.usdz in Resources */,
+				72665E3528324ECC00E75C8A /* tomato-plant.usdz in Resources */,
 				720E9A1B27CF8B30002433ED /* teapot.usdz in Resources */,
+				7218025028338FC60092667B /* furniture_set_2_table.usdz in Resources */,
 				720846DF27DA196C007AA791 /* cupandsaucer.usdz in Resources */,
-				720733FA27DA3F6700059A72 /* tree.usdz in Resources */,
+				72C2A9132822B3BA005F6CCD /* bucket.usdz in Resources */,
+				72665E3328324ECC00E75C8A /* furniture_set_chair_1.usdz in Resources */,
+				7282B45A2833DD8D003C45C1 /* turtle.usdz in Resources */,
+				72665E3028324ECC00E75C8A /* swimming-pool.usdz in Resources */,
+				72C2A9112822B39F005F6CCD /* chair-beech.usdz in Resources */,
+				720733FA27DA3F6700059A72 /* simple-tree.usdz in Resources */,
+				72665E3C28325D5500E75C8A /* wheelbarrow.usdz in Resources */,
+				72665E2C28324ECC00E75C8A /* furniture_set_table.usdz in Resources */,
+				72D778EC282269CA00C3413E /* slide.usdz in Resources */,
+				72665E2628324ECC00E75C8A /* lamp.usdz in Resources */,
+				7282B4592833DD8D003C45C1 /* box.usdz in Resources */,
+				72665E3928324ECC00E75C8A /* flower-2.usdz in Resources */,
+				72180255283394900092667B /* tree-small.usdz in Resources */,
+				72C2A90F2822B39F005F6CCD /* chair-oak.usdz in Resources */,
+				72665E2528324ECC00E75C8A /* furniture_set_beanbag.usdz in Resources */,
+				72C2A9192822B460005F6CCD /* basketball.usdz in Resources */,
+				72665E3628324ECC00E75C8A /* apple-tree.usdz in Resources */,
+				7218024F28338FC60092667B /* furniture_set_2_chair.usdz in Resources */,
+				72C2A9102822B39F005F6CCD /* chair-black.usdz in Resources */,
+				72665E3728324ECC00E75C8A /* flower-3.usdz in Resources */,
+				72665E2F28324ECC00E75C8A /* rose-in-a-pot.usdz in Resources */,
+				72665E2A28324ECC00E75C8A /* furniture_set_chair_2.usdz in Resources */,
+				72180254283394900092667B /* tree-big.usdz in Resources */,
 				723B571427C5233000C87EC7 /* Preview Assets.xcassets in Resources */,
+				72665E2728324ECC00E75C8A /* flower-1.usdz in Resources */,
 				723B571127C5233000C87EC7 /* Assets.xcassets in Resources */,
+				72665E3128324ECC00E75C8A /* shovel.usdz in Resources */,
+				72665E2928324ECC00E75C8A /* flower-pot.usdz in Resources */,
+				7242C09028325ECD0091CABC /* pumpkin.usdz in Resources */,
+				72C2A9172822B425005F6CCD /* wooden-fence.usdz in Resources */,
+				72C2A9152822B3D4005F6CCD /* table-bergamo.usdz in Resources */,
+				7218025128338FC60092667B /* furniture_set_2_all.usdz in Resources */,
+				72665E3D28325D5500E75C8A /* raised-bed.usdz in Resources */,
+				72665E2B28324ECC00E75C8A /* furniture_set_all.usdz in Resources */,
+				72665E2D28324ECC00E75C8A /* fern.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,13 +412,14 @@
 				72EDF65427FF6E0900DB249F /* RecentsButton.swift in Sources */,
 				723B570D27C5232E00C87EC7 /* ContentView.swift in Sources */,
 				723B571B27C523B400C87EC7 /* Settings.swift in Sources */,
+				7218025728339E2B0092667B /* CategoryView.swift in Sources */,
 				7241914127E9E68200EE9119 /* SettingsView.swift in Sources */,
 				72786CBB27DFA1DF003FC2CE /* CustomARView.swift in Sources */,
 				72786CB527DF920D003FC2CE /* Model.swift in Sources */,
 				723B571D27C5245C00C87EC7 /* ARViewContainer.swift in Sources */,
-				7285C7612816CABD00B4D930 /* MultipeerSession.swift in Sources */,
 				72786CB727DF9379003FC2CE /* CatalogueView.swift in Sources */,
 				723B570B27C5232E00C87EC7 /* AppDelegate.swift in Sources */,
+				7263E6302823D97C00471DE1 /* ItemView.swift in Sources */,
 				7299D23F27FB235200D4B1D7 /* DeleteModelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,23 +548,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AR-Garden/Preview Content\"";
 				DEVELOPMENT_TEAM = ZRNUGARP83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BSP6-Info.plist";
+				INFOPLIST_FILE = "AR-Garden-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Garden";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented reality";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = Multipeer;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Multipeer experience";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Multipeer experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,7 +574,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flavio.AR-Garden";
-				PRODUCT_NAME = "AR-Garden";
+				PRODUCT_NAME = "AR Garden";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,23 +586,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AR-Garden/Preview Content\"";
 				DEVELOPMENT_TEAM = ZRNUGARP83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BSP6-Info.plist";
+				INFOPLIST_FILE = "AR-Garden-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Garden";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Augmented reality";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = Multipeer;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Multipeer experience";
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Multipeer experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,7 +612,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flavio.AR-Garden";
-				PRODUCT_NAME = "AR-Garden";
+				PRODUCT_NAME = "AR Garden";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		723B571727C5233000C87EC7 /* Build configuration list for PBXNativeTarget "BSP6" */ = {
+		723B571727C5233000C87EC7 /* Build configuration list for PBXNativeTarget "AR-Garden" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				723B571827C5233000C87EC7 /* Debug */,
@@ -467,6 +643,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		721802582833ACBE0092667B /* XCRemoteSwiftPackageReference "multipeer-session" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AddedLayer/multipeer-session.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		72EDF64D27FF6CAF00DB249F /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxfrazer/FocusEntity.git";
@@ -478,6 +662,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		721802592833ACBE0092667B /* MultipeerSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 721802582833ACBE0092667B /* XCRemoteSwiftPackageReference "multipeer-session" */;
+			productName = MultipeerSession;
+		};
 		72EDF64E27FF6CAF00DB249F /* FocusEntity */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 72EDF64D27FF6CAF00DB249F /* XCRemoteSwiftPackageReference "FocusEntity" */;

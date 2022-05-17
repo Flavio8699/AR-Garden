@@ -53,6 +53,7 @@ class CustomARView: ARView {
         
         self.addSubview(coachingOverlay)
         
+        // Settings
         self.cancellablePeopleOcclusion = settings.$peopleOcclusion.sink { [weak self] _ in
             self?.togglePeopleOcclusion()
         }
@@ -70,6 +71,17 @@ class CustomARView: ARView {
         }
     }
     
+    @objc required dynamic init?(coder decoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    @MainActor override required dynamic init(frame frameRect: CGRect) {
+        fatalError("init(frame:) has not been implemented")
+    }
+}
+
+// MARK: Settings
+extension CustomARView {
     func togglePeopleOcclusion() {
         guard ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else { return }
         guard let config = self.session.configuration as? ARWorldTrackingConfiguration else { return }
@@ -103,13 +115,5 @@ class CustomARView: ARView {
         guard let config = self.session.configuration as? ARWorldTrackingConfiguration else { return }
         config.isCollaborationEnabled.toggle()
         self.session.run(config)
-    }
-    
-    @objc required dynamic init?(coder decoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    @MainActor override required dynamic init(frame frameRect: CGRect) {
-        fatalError("init(frame:) has not been implemented")
     }
 }
