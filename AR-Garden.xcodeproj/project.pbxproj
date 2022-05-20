@@ -52,6 +52,7 @@
 		7282B45A2833DD8D003C45C1 /* turtle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7282B4582833DD8D003C45C1 /* turtle.usdz */; };
 		7285C75F2816B88700B4D930 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285C75E2816B88700B4D930 /* ARViewModel.swift */; };
 		7299D23F27FB235200D4B1D7 /* DeleteModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */; };
+		72A12D1228378BE8000AE2F2 /* ARQuickLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A12D1128378BE8000AE2F2 /* ARQuickLook.swift */; };
 		72C2A90B2822B388005F6CCD /* bench.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A90A2822B388005F6CCD /* bench.usdz */; };
 		72C2A90F2822B39F005F6CCD /* chair-oak.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A90C2822B39E005F6CCD /* chair-oak.usdz */; };
 		72C2A9102822B39F005F6CCD /* chair-black.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72C2A90D2822B39E005F6CCD /* chair-black.usdz */; };
@@ -113,6 +114,7 @@
 		7282B4582833DD8D003C45C1 /* turtle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = turtle.usdz; sourceTree = "<group>"; };
 		7285C75E2816B88700B4D930 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 		7299D23E27FB235200D4B1D7 /* DeleteModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteModelView.swift; sourceTree = "<group>"; };
+		72A12D1128378BE8000AE2F2 /* ARQuickLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLook.swift; sourceTree = "<group>"; };
 		72C2A90A2822B388005F6CCD /* bench.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = bench.usdz; sourceTree = "<group>"; };
 		72C2A90C2822B39E005F6CCD /* chair-oak.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "chair-oak.usdz"; sourceTree = "<group>"; };
 		72C2A90D2822B39E005F6CCD /* chair-black.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "chair-black.usdz"; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			children = (
 				723B571C27C5245C00C87EC7 /* ARViewContainer.swift */,
 				72786CBA27DFA1DF003FC2CE /* CustomARView.swift */,
+				72A12D1128378BE8000AE2F2 /* ARQuickLook.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7285C75F2816B88700B4D930 /* ARViewModel.swift in Sources */,
+				72A12D1228378BE8000AE2F2 /* ARQuickLook.swift in Sources */,
 				72EDF65227FF6DF300DB249F /* CustomButton.swift in Sources */,
 				72786CB927DF9E3D003FC2CE /* PlaceModelView.swift in Sources */,
 				72EDF65427FF6E0900DB249F /* RecentsButton.swift in Sources */,
